@@ -1,0 +1,32 @@
+.advantages {
+  background-color: #222224;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 104px;
+  padding-top: 104px;
+}
+.advantage {
+  &-img-delivery {
+    margin-bottom: 28px;
+  }
+  &-img-sales {
+    margin-bottom: 20px;
+  }
+  &-img-guarantee {
+    margin-bottom: 25px;
+  }
+  &-heading {
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #fbfbfb;
+    margin-bottom: 16px;
+  }
+  &-text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #fbfbfb;
+  }
+}

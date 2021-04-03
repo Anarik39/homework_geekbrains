@@ -1,0 +1,104 @@
+.main-index {
+  padding-bottom: 109px;
+}
+
+.promo {
+  background-color: #f1e4e6;
+  margin-bottom: 65px;
+  &-background {
+    height: 764px;
+    background-image: url(../img/promo-men.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-position: bottom left;
+  }
+  &-heading {
+    border-left: 12px solid $pink;
+    padding-left: 16px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+    margin-right: 98px;
+    margin-bottom: 100px;
+    &-the-brand {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 58px;
+    }
+    &-fashion {
+      color: $pink;
+    }
+  }
+}
+
+.offers {
+  padding-bottom: 96px;
+  &-parent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+.offer {
+  position: relative;
+  &-img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  &-text {
+    text-align: center;
+    position: absolute;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    &-span {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      color: $pink;
+    }
+    &-position {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.products {
+  &-heading {
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin-bottom: 6px;
+  }
+  &-text {
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9f9f9f;
+  }
+  &-button {
+    margin-top: 63px;
+    text-align: center;
+    &-link {
+      @include pink-button;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 15px 39px;
+      background: white;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        color: white;
+        background: $pink;
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.container {
+  padding: 0 calc(50% - 1140px / 2);
+}
+
+.breadcrumbs {
+  height: 148px;
+  background: #f8f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-heading {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: $pink;
+  }
+  &-link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    &::after {
+      content: " / ";
+    }
+    &:last-child {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: $pink;
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  background: #f8f8f8;
+  max-width: 360px;
+  margin-bottom: 30px;
+  &-margin {
+    margin-bottom: 0;
+  }
+  &-img-box {
+    position: relative;
+  }
+  &-background {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+  }
+  &:hover &-background {
+    visibility: visible;
+  }
+  &-img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  &-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    outline: none;
+    padding: 11px 16px 8px 13px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &::before {
+      content: url(../img/card-busket.svg);
+      padding-right: 11px;
+    }
+  }
+
+  &-info {
+    padding: 25px 26px 20px 16px;
+    &-heading {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000000;
+    }
+    &-text {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5d5d5d;
+      margin: 13px 0 18px;
+    }
+    &-price {
+      font-size: 16px;
+      line-height: 19px;
+      color: $pink;
+    }
+  }
+}
+
+.pagination {
+  width: 284px;
+  margin: 48px auto 0;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 16px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+  }
+  &-li {
+    flex-grow: 1;
+    &-link {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #c4c4c4;
+      &-first {
+        color: #ef5b70;
+      }
+    }
+  }
+}

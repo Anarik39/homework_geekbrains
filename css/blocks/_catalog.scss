@@ -1,0 +1,42 @@
+.main-catalog {
+  padding-bottom: 96px;
+}
+
+.customization {
+  margin: 39px 0 64px;
+  display: flex;
+}
+.filters {
+  width: 360px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-right: 30px;
+
+  &-input {
+    appearance: none;
+    &:checked ~ .filters-label,
+    &:checked ~ .filters-icon {
+      color: #ef5b70;
+      fill: #ef5b70;
+    }
+  }
+
+  &-label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  &-icon {
+    padding-left: 11px;
+  }
+}
+
+.sorting {
+  @include sorting;
+  &-label-catalog {
+    @include sorting-label(28px, 10px);
+  }
+}
